@@ -69,14 +69,8 @@
 
 .close-btn {
   display: none;
-  background-color: transparent;
   justify-content: center;
   align-items: center;
-  padding: 4px;
-  background-image: url(../img/header/header-menu.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   @include media(desktop) {
   }

@@ -21,6 +21,7 @@
   font-weight: 700;
   font-size: 20px;
   color: #fff;
+  text-align: center;
   margin-bottom: 20px;
 
   @include media(desktop) {
@@ -37,5 +38,8 @@
 
   @include media(desktop) {
     font-size: 26px;
+    max-width: 938px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
