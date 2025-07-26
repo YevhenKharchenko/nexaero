@@ -1,22 +1,24 @@
 .header {
-  background: #091423;
-  padding: 14px 0;
+  padding: 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
-  background-image: url(../img/header/line-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top 0px center;
   background-size: auto;
 
   @include media(desktop) {
-    padding: 31px 0;
-    background-image: url(../img/header/line-desk.png);
+    padding-top: 10px;
+    background-image: url(../img/hero/hero-bg-desk.png);
   }
 }
 
 .header-container {
+  @include media(desktop) {
+    padding: 0 55px;
+  }
 }
 
 .header-nav {
@@ -28,57 +30,40 @@
   }
 }
 
-.header-logo-link {
-  font-family: 'Wallpoet', sans-serif;
+.header-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #00fff7;
+  font-size: 14px;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 32px;
+    gap: 16px;
+    font-size: 24px;
   }
 }
 
-.header-br {
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.menu-btn {
-  display: none;
-
-  @include media(desktop) {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 28px;
-    background-image: url(../img/header/header-menu-desk.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-family: 'Wallpoet', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #f2f2f2;
-  }
+.header-span {
+  min-width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #fff;
 }
 
 .nav-btn {
-  background-color: transparent;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 4px;
-  background-image: url(../img/header/header-menu.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  gap: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 
   @include media(desktop) {
-    display: none;
+    gap: 16px;
+    font-size: 24px;
   }
 }
 
@@ -94,6 +79,5 @@
   background-size: cover;
 
   @include media(desktop) {
-    display: none;
   }
 }

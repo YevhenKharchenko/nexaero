@@ -1,157 +1,120 @@
 .footer {
-  background: #091423;
-  padding-top: 52px;
-  padding-bottom: 52px;
-  background-image: url(../img/header/line-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
+  padding-top: 4px;
+  padding-bottom: 13px;
 
   @include media(desktop) {
-    padding-top: 68px;
-    padding-bottom: 12px;
-    background-image: url(../img/header/line-desk.png);
+    padding-top: 13px;
+    padding-bottom: 33px;
   }
 }
 
 .footer-container {
-}
-
-.footer-top-wrapper {
-  margin-bottom: 32px;
+  padding: 0;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 29px;
+    padding: 0 42px;
   }
 }
 
-.footer-nav-wrapper {
-  margin-bottom: 32px;
+.footer-text-wrapper {
+  margin-bottom: 55px;
 
   @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+
+.footer-contact-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  max-width: 301px;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+    max-width: 652px;
     margin-bottom: 0;
   }
 }
 
-.footer-nav-text {
-  font-family: 'Turret Road', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22222;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #00fff7;
-  margin-bottom: 8px;
+.footer-contact-link {
+}
+
+.footer-legal-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  color: #fff;
+  max-width: 301px;
+  margin-left: auto;
 
   @include media(desktop) {
     font-size: 24px;
-    line-height: 1.08333;
-    text-align: left;
-    margin-bottom: 16px;
+    line-height: 1.33333;
+    max-width: 652px;
+    margin-left: 0;
   }
 }
 
 .footer-nav {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .footer-list {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 
   @include media(desktop) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 12px;
+    gap: 80px;
+  }
+}
+
+.footer-list-item {
+  &:nth-child(2) {
+    position: relative;
+    top: -22px;
+  }
+
+  @include media(desktop) {
+    &:nth-child(2) {
+      position: static;
+      top: auto;
+    }
   }
 }
 
 .footer-link {
-  font-family: 'Wallpoet', sans-serif;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.33333;
-  text-align: center;
-  color: #f2f2f2;
-  transition: all 0.3s ease-in-out;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-
-  &:hover,
-  &:focus {
-  }
-}
-
-.footer-contact-wrapper {
-}
-
-.footer-contact-text {
-  font-family: 'Turret Road', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22222;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #00fff7;
-  margin-bottom: 8px;
+  font-size: 12px;
+  color: #fff;
 
   @include media(desktop) {
     font-size: 24px;
-    line-height: 1.08333;
-    text-align: left;
-  }
-}
-
-.footer-contact-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-
-  @include media(desktop) {
-    align-items: start;
-  }
-}
-
-.footer-contact-item {
-}
-
-.footer-contact-link {
-  font-family: 'Turret Road', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: #fff;
-  opacity: 0.8;
-
-  @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.02em;
   }
 }
 
 .footer-text {
-  font-family: 'Turret Road', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: 0.02em;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
-  color: #fff;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.4);
 
   @include media(desktop) {
-    font-size: 16px;
-    line-height: 1.625;
+    font-size: 30px;
   }
 }
