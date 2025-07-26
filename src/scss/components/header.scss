@@ -1,0 +1,99 @@
+.header {
+  background: #091423;
+  padding: 14px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-image: url(../img/header/line-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding: 31px 0;
+    background-image: url(../img/header/line-desk.png);
+  }
+}
+
+.header-container {
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.header-logo-link {
+  font-family: 'Wallpoet', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #00fff7;
+
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.header-br {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.menu-btn {
+  display: none;
+
+  @include media(desktop) {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 28px;
+    background-image: url(../img/header/header-menu-desk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Wallpoet', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f2f2f2;
+  }
+}
+
+.nav-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-image: url(../img/header/header-menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-btn {
+  display: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-image: url(../img/header/header-menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

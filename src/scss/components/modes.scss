@@ -1,0 +1,93 @@
+.modes-section {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.modes-top-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #f2f2f2;
+  margin-bottom: 52px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    margin-bottom: 76px;
+  }
+}
+
+.modes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 52px;
+
+  @include media(desktop) {
+    gap: 45px;
+    margin-bottom: 76px;
+  }
+}
+
+.modes-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 40px;
+
+    &:first-child,
+    &:last-child {
+      transform: translateX(36px);
+    }
+
+    &:nth-child(2) {
+      transform: translateX(-36px);
+    }
+  }
+}
+
+.modes-item-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #fff;
+  opacity: 0.8;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 761px;
+  }
+}
+
+.modes-bottom-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #f2f2f2;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+}

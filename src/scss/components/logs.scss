@@ -1,0 +1,139 @@
+.logs-section {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.logs-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.logs-top-text-wrapper {
+  background: rgba(141, 138, 152, 0.15);
+  padding: 24px 16px;
+  margin-bottom: 52px;
+
+  @include media(desktop) {
+    padding: 26px 16px;
+    margin-bottom: 120px;
+  }
+}
+
+.logs-top-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #f2f2f2;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 846px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    gap: 104px;
+    max-width: 971px;
+  }
+}
+
+.logs-list-item {
+  background-image: url(../img/logs/logs-line-mob.png),
+    url(../img/logs/logs-line-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: auto;
+  padding: 32px 16px;
+
+  @include media(desktop) {
+    background-image: url(../img/logs/logs-line-desk.png),
+      url(../img/logs/logs-line-desk.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: auto;
+    padding: 39px 99px 39px 78px;
+  }
+}
+
+.logs-item-user {
+  font-family: 'VT323', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(242, 242, 242, 0.4);
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+}
+
+.logs-item-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #f2f2f2;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 693px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logs-bottom-text-wrapper {
+  background: rgba(141, 138, 152, 0.15);
+  padding: 24px 16px;
+
+  @include media(desktop) {
+    padding: 26px 16px;
+  }
+}
+
+.logs-bottom-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #f2f2f2;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 846px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

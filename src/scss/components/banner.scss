@@ -1,0 +1,138 @@
+.cookie-banner-section {
+  background: #f2f2f2;
+  padding: 40px 16px 36px 16px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    padding: 30px 189px;
+    max-width: 1440px;
+  }
+}
+
+.cookie-banner-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cookie-banner-text-wrapper {
+  margin-bottom: 42px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.cookie-banner-top-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22222;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #101010;
+  margin-bottom: 18px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.08333;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+}
+
+.cookie-banner-bottom-text {
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #101010;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    gap: 12px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 9px 51px;
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #101010;
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    padding: 6px 51px;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 302px;
+  }
+}
+
+.cookie-decline-btn {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 9px 49px;
+  font-family: 'Turret Road', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #101010;
+  width: 100%;
+  max-width: 343px;
+
+  @include media(desktop) {
+    padding: 6px 49px;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    max-width: 302px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}
