@@ -4,14 +4,14 @@
   background-position: top 0px center;
   background-size: auto;
   padding-top: 122px;
-  padding-bottom: 121px;
+  padding-bottom: 179px;
   max-width: 375px;
   margin: 0 auto;
 
   @include media(desktop) {
     background-image: url(../img/hero/hero-bg-desk.png);
     padding-top: 207px;
-    padding-bottom: 208px;
+    padding-bottom: 316px;
     max-width: 1440px;
   }
 }
@@ -34,6 +34,7 @@
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  line-height: 1.3;
   color: #fff;
 
   @include media(desktop) {
