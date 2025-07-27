@@ -1,0 +1,150 @@
+.toolkit-section {
+  padding-bottom: 65px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding-bottom: 126px;
+    max-width: 1440px;
+  }
+}
+
+.toolkit-container {
+  padding: 0 17px;
+
+  @include media(desktop) {
+    padding: 0 65px;
+  }
+}
+
+.toolkit-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 724px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+.toolkit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    gap: 24px 80px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.toolkit-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    gap: 14px;
+  }
+}
+
+.toolkit-img {
+}
+
+.toolkit-item-text-wrapper {
+}
+
+.toolkit-item-title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.toolkit-item-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  max-width: 301px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 475px;
+  }
+}
+
+.toolkit-procedure-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 724px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.toolkit-procedure-list-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 566px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.toolkit-bottom-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 724px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,121 @@
+.dispatches-section {
+  padding-bottom: 47px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 121px;
+    max-width: 1440px;
+  }
+}
+
+.dispatches-container {
+  padding: 0 20px;
+
+  @include media(desktop) {
+    padding: 0 120px;
+  }
+}
+
+.dispatches-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.dispatches-swiper-container {
+  max-width: 247px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.dispatches-swiper-container.show {
+  visibility: visible;
+}
+
+.dispatches-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.dispatches-slide {
+  background: linear-gradient(180deg, #145 0%, #174150 39.9%, #181c22 100%);
+  border-radius: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 9px;
+  width: 100% !important;
+  max-width: 247px;
+  min-height: 206px;
+
+  @include media(desktop) {
+    padding: 32px 16px;
+    max-width: 393px;
+    min-height: 383px;
+  }
+}
+
+.dispatches-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+  }
+}
+
+.dispatches-item-span {
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -120px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

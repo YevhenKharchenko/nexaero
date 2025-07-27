@@ -1,23 +1,54 @@
-const faqBtns = document.querySelectorAll('.faq-top-text-btn');
-faqBtns.forEach(btn => btn.addEventListener('click', onBtnClick));
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
 
-function onBtnClick(e) {
-  const faqTop = e.currentTarget;
-  const faqContainer = faqTop.closest('.faq-list-item');
+const faqLeftArrow = document.getElementById('faqLeftArrow');
+const faqRightArrow = document.getElementById('faqRightArrow');
 
-  document.querySelectorAll('.faq-list-item').forEach(item => {
-    if (item !== faqContainer) {
-      item.classList.remove('faq-open');
-      item.querySelector('.faq-bottom-text').classList.remove('is-visible');
-    }
-  });
+let faqSwiper;
 
-  const bottomText = faqContainer.querySelector('.faq-bottom-text');
-  bottomText.classList.toggle('is-visible');
+faqSwiper = new Swiper('.faq-swiper-container', {
+  direction: 'horizontal',
+  loop: false,
+  grabCursor: true,
+  slidesPerView: 1,
+  initialSlide: 0,
+  spaceBetween: 20,
+  grabCursor: true,
+  allowTouchMove: true,
+  speed: 500,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    1440: {
+      spaceBetween: 0,
+      slidesPerView: 9,
+      grabCursor: false,
+      allowTouchMove: false,
+    },
+  },
+  on: {
+    init: () => {
+      document.querySelector('.faq-swiper-container').classList.add('show');
+    },
+    slideChange: function () {
+      updateFaqArrows(this);
+    },
+  },
+});
 
-  if (bottomText.classList.contains('is-visible')) {
-    faqContainer.classList.add('faq-open');
-  } else {
-    faqContainer.classList.remove('faq-open');
-  }
+updateFaqArrows(faqSwiper);
+
+function updateFaqArrows(swiper) {
+  faqLeftArrow.disabled = swiper.isBeginning;
+  faqRightArrow.disabled = swiper.isEnd;
 }
+
+faqLeftArrow.addEventListener('click', () => {
+  faqSwiper.slidePrev();
+});
+
+faqRightArrow.addEventListener('click', () => {
+  faqSwiper.slideNext();
+});

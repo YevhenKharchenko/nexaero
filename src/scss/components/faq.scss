@@ -1,0 +1,105 @@
+.faq-section {
+  padding-bottom: 99px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-bottom: 133px;
+    max-width: 1440px;
+  }
+}
+
+.faq-container {
+  padding: 0 15px;
+
+  @include media(desktop) {
+    padding: 0 31px;
+  }
+}
+
+.faq-title {
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.faq-swiper-container {
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.faq-swiper-container.show {
+  visibility: visible;
+}
+
+.faq-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.faq-slide {
+  border: 1px solid #fff;
+  border-radius: 40px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  padding: 10px 22px;
+  width: 100% !important;
+  max-width: 264px;
+  min-height: 188px;
+
+  @include media(desktop) {
+    padding: 27px 10px;
+    gap: 51px;
+    max-width: 446px;
+    min-height: 299px;
+  }
+}
+
+.faq-item-title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.faq-item-text {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.faq-controls {
+  top: -110px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
